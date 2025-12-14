@@ -3,7 +3,8 @@ import { GRID_SIZE } from "../constants";
 import { TileType } from "../types";
 
 export const generateLevel = async (prompt: string): Promise<number[][]> => {
-  if (!process.env.API_KEY) {
+  // if (!process.env.API_KEY) {
+  if (!import.meta.env.VITE_GEMINI_API_KEY) {  
     throw new Error("API Key is missing");
   }
 
