@@ -7,7 +7,8 @@ export const generateLevel = async (prompt: string): Promise<number[][]> => {
     throw new Error("API Key is missing");
   }
 
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  // const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
   const systemInstruction = `
     You are a level designer for a grid-based tank battle game (like Battle City).
