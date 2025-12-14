@@ -1,0 +1,5 @@
+{
+  "name": "Retro Tank Battle AI",
+  "description": "A classic top-down tank battle game featuring AI-generated levels using Google Gemini. Defend your base, destroy enemy tanks, and create custom battlefields with natural language.",
+  "requestFramePermissions": []
+}
